@@ -2,9 +2,7 @@
 
 namespace QiitaApi;
 
-use QiitaApi;
-
-//require_once __DIR__ . '/../src/Curl.php';
+require_once __DIR__ . '/../src/Curl.php';
 
 class CurlTest extends \PHPUnit_Framework_TestCase
 {
