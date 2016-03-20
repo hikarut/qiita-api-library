@@ -3,20 +3,22 @@
 namespace QiitaApi;
 
 require_once __DIR__ . '/../src/Curl.php';
+require_once __DIR__ . '/../src/QiitaApiException.php';
 
 class CurlTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @covers Curl::get
+     * @covers Curl::get()
      */
     public function testGet()
     {
         $curl = new Curl();
+        $ret = Curl::get('http://yahoo.co.jp');
         $this->assertTrue(true);
     }
     
     /**
-     * @covers Curl::post
+     * @covers Curl::post()
      */
     public function testPost()
     {
@@ -24,7 +26,7 @@ class CurlTest extends \PHPUnit_Framework_TestCase
     }
     
     /**
-     * @covers Curl::put
+     * @covers Curl::put()
      */
     public function testPut()
     {
