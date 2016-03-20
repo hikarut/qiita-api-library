@@ -1,17 +1,22 @@
 <?php
 
-class CurlTest extends PHPUnit_Framework_TestCase
+namespace QiitaApi;
+
+//require_once __DIR__ . '/../src/Curl.php';
+
+class CurlTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @covers QiitaApi\Curl::get
+     * @covers Curl::get
      */
     public function testGet()
     {
+        $curl = new Curl();
         $this->assertTrue(true);
     }
     
     /**
-     * @covers QiitaApi\Curl::post
+     * @covers Curl::post
      */
     public function testPost()
     {
@@ -19,7 +24,7 @@ class CurlTest extends PHPUnit_Framework_TestCase
     }
     
     /**
-     * @covers QiitaApi\Curl::put
+     * @covers Curl::put
      */
     public function testPut()
     {
