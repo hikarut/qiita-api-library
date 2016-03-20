@@ -7,3 +7,7 @@ test:
   override:
       - mkdir -p $CIRCLE_TEST_REPORTS/phpunit
       - phpunit --log-junit $CIRCLE_TEST_REPORTS/phpunit/junit.xml --coverage-html=$CIRCLE_ARTIFACTS tests
+
+dependencies:
+  pre:
+      - sed -i 's/^;//' ~/.phpenv/versions/$(phpenv global)/etc/conf.d/xdebug.ini
