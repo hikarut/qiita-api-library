@@ -2,11 +2,6 @@
 machine:
   timezone: Asia/Tokyo
 
-## Customize deployment commands
-deployment:
-  deploy:
-      branch: master
-
 ## Customize test commands
 test:
   override:
