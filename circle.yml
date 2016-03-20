@@ -2,7 +2,7 @@
 machine:
   timezone: Asia/Tokyo
   php:
-    version: 5.5.11
+    version: 7.0.0
 
 general:
   artifacts:
