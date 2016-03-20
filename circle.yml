@@ -4,6 +4,10 @@ machine:
   php:
     version: 5.5.11
 
+general:
+  artifacts:
+      - "app/build/reports/tests"
+
 ## Customize test commands
 test:
   override:
