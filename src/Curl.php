@@ -68,7 +68,7 @@ class Curl
      * @param array $data
      * @return array $response
      */
-    private function request($method, $url, $data = array())
+    private static function request($method, $url, $data = array())
     {
         $ch = curl_init();
         
