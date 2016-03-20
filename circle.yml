@@ -6,8 +6,4 @@ machine:
 test:
   override:
       - mkdir -p $CIRCLE_TEST_REPORTS/phpunit
-      - phpunit --log-junit $CIRCLE_TEST_REPORTS/phpunit/junit.xml tests
-
-general:
-  artifacts:
-      - "app/build/reports/tests"
+      - phpunit --log-junit $CIRCLE_TEST_REPORTS/phpunit/junit.xml --coverage-html=$CIRCLE_ARTIFACTS tests
