@@ -8,7 +8,7 @@ require_once __DIR__ . '/../src/QiitaApiException.php';
 class CurlTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @covers Curl::get
+     * @covers \QiitaApi\Curl::get
      */
     public function testGet()
     {
@@ -17,7 +17,7 @@ class CurlTest extends \PHPUnit_Framework_TestCase
     }
     
     /**
-     * @covers Curl::post
+     * @covers \QiitaApi\Curl::post
      */
     public function testPost()
     {
@@ -26,7 +26,7 @@ class CurlTest extends \PHPUnit_Framework_TestCase
     }
     
     /**
-     * @covers Curl::put
+     * @covers \QiitaApi\Curl::put
      */
     public function testPut()
     {

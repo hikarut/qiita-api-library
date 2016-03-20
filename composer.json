@@ -4,6 +4,6 @@
         "phpunit/phpunit": "5.0.10"
     },
     "autoload": {
-        "psr-0": {"QiitaApi": "src"}
+        "psr-0": {"QiitaApi\\": "src/"}
     }
 }
