@@ -15,6 +15,7 @@ test:
       #- phpunit --log-junit $CIRCLE_TEST_REPORTS/phpunit/junit.xml --coverage-html=$CIRCLE_ARTIFACTS tests
       #- ./vendor/bin/phpunit --log-junit $CIRCLE_TEST_REPORTS/phpunit/junit.xml --coverage-html=$CIRCLE_ARTIFACTS tests
       #- ./vendor/bin/phpunit --coverage-html=$CIRCLE_ARTIFACTS
+      - ./vendor/bin/phpunit
 
 dependencies:
   pre:
