@@ -11,10 +11,10 @@ general:
 ## Customize test commands
 test:
   override:
-      - mkdir -p $CIRCLE_TEST_REPORTS/phpunit
+      #- mkdir -p $CIRCLE_TEST_REPORTS/phpunit
       #- phpunit --log-junit $CIRCLE_TEST_REPORTS/phpunit/junit.xml --coverage-html=$CIRCLE_ARTIFACTS tests
       #- ./vendor/bin/phpunit --log-junit $CIRCLE_TEST_REPORTS/phpunit/junit.xml --coverage-html=$CIRCLE_ARTIFACTS tests
-      - ./vendor/bin/phpunit --coverage-html=$CIRCLE_ARTIFACTS
+      #- ./vendor/bin/phpunit --coverage-html=$CIRCLE_ARTIFACTS
 
 dependencies:
   pre:
