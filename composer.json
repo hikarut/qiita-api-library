@@ -3,4 +3,7 @@
         "phpunit/php-code-coverage": "^3",
         "phpunit/phpunit": "5.0.10"
     }
+    "autoload": {
+        "psr-0": {"Qiita\\": "src/"}
+    }
 }
