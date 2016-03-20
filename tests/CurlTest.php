@@ -3,7 +3,7 @@
 class CurlTest extends PHPUnit_Framework_TestCase
 {
     /**
-     * @covers Curl::get
+     * @covers \Curl::get
      */
     public function testGet()
     {
@@ -11,7 +11,7 @@ class CurlTest extends PHPUnit_Framework_TestCase
     }
     
     /**
-     * @covers Curl::post
+     * @covers \Curl::post
      */
     public function testPost()
     {
@@ -19,7 +19,7 @@ class CurlTest extends PHPUnit_Framework_TestCase
     }
     
     /**
-     * @covers Curl::put
+     * @covers \Curl::put
      */
     public function testPut()
     {
