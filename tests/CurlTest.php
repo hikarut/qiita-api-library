@@ -12,7 +12,6 @@ class CurlTest extends \PHPUnit_Framework_TestCase
      */
     public function testGet()
     {
-        $curl = new Curl();
         $ret = Curl::get('http://yahoo.co.jp');
         $this->assertTrue(true);
     }
@@ -22,6 +21,7 @@ class CurlTest extends \PHPUnit_Framework_TestCase
      */
     public function testPost()
     {
+        $ret = Curl::post('http://yahoo.co.jp', array('a'));
         $this->assertTrue(true);
     }
     
@@ -30,6 +30,7 @@ class CurlTest extends \PHPUnit_Framework_TestCase
      */
     public function testPut()
     {
+        $ret = Curl::put('http://yahoo.co.jp', array('a'));
         $this->assertTrue(true);
     }
 
